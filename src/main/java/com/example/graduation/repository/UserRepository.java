@@ -18,4 +18,11 @@ public interface UserRepository extends JpaRepository<User, Integer> {
      * @return User
      */
     User findByUsername(String username);
+
+    /**
+     * count计数，查找username
+     * @param username
+     * @return
+     */
+    long countByUsername(String username);
 }

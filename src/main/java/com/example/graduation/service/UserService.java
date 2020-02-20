@@ -11,5 +11,10 @@ import com.example.graduation.entity.User;
  **/
 
 public interface UserService {
-    User findByUsername(String username);  //根据用户名查找用户数据
+    //根据用户名查找用户数据
+    User findByUsername(String username);
+    //查找用户名是否存在
+    boolean existTheUsername(String username);
+    //保存新用户
+    boolean saveNewUser(User user);
 }

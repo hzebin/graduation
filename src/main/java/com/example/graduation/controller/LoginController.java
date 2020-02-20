@@ -27,7 +27,7 @@ import java.util.HashMap;
 @RestController
 public class LoginController {
 
-    @PostMapping("/login")
+    @PostMapping("/login")  //登录
     public Result login(@RequestBody User user) {
         //algorithmName代表进行加密的算法名称、
         //source代表需要加密的元数据，如密码、
