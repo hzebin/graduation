@@ -1,0 +1,12 @@
+spring:
+  # 配置MySQL数据库
+  datasource:
+    username: root
+    password: root1234
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/graduation?serverTimezone=UTC
+  # Spring Data JPA
+  jpa:
+    hibernate:
+      ddl-auto: update  # 数据表的生成策略，更新或则创建表结构
+    show-sql: true  # 在控制台显示SQL语句
